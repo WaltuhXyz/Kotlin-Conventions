@@ -8,6 +8,7 @@ version = "0.0.1"
 
 repositories {
     gradlePluginPortal()
+    mavenCentral()
 }
 
 publishing {
@@ -43,5 +44,10 @@ dependencies {
     // Shading
     implementation("com.github.johnrengelman:shadow:+") {
         because("Provides 'Shadow' gradle plugin")
+    }
+
+    // KtLint
+    implementation("org.jlleitschuh.gradle:ktlint:+") {
+        because("Provides 'KtLint' gradle plugin")
     }
 }

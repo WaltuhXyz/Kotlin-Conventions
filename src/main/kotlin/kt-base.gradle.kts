@@ -4,6 +4,7 @@ plugins {
     checkstyle
 
     kotlin("jvm")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 configure<KotlinProjectExtension> {
