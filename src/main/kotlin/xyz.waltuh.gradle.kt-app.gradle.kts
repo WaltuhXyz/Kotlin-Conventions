@@ -1,6 +1,6 @@
 import org.gradle.kotlin.dsl.application
 
 plugins {
-    id("kt-base")
+    id("xyz.waltuh.gradle.kt-base")
     application
 }

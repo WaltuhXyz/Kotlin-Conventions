@@ -2,7 +2,7 @@ import org.gradle.kotlin.dsl.`java-library`
 import org.jetbrains.dokka.gradle.DokkaTask
 
 plugins {
-    id("kt-base")
+    id("xyz.waltuh.gradle.kt-base")
     `java-library`
 
     id("org.jetbrains.dokka")
