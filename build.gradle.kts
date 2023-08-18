@@ -14,6 +14,12 @@ repositories {
 gradlePlugin {
     website.set("https://github.com/WaltuhXyz/Kotlin-Conventions")
     vcsUrl.set("https://github.com/WaltuhXyz/Kotlin-Conventions")
+
+    plugins.all {
+        displayName = name
+        description = "Convention plugin for the Kotlin JVM projects"
+        tags.set(setOf("kotlin", "jvm", "convention"))
+    }
 }
 
 dependencies {
