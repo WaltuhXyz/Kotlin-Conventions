@@ -15,9 +15,35 @@ gradlePlugin {
     website.set("https://github.com/WaltuhXyz/Kotlin-Conventions")
     vcsUrl.set("https://github.com/WaltuhXyz/Kotlin-Conventions")
 
+    plugins.clear()
+    plugins {
+        create("xyz.waltuh.gradle.kt-base") {
+            id = "xyz.waltuh.gradle.kt-base"
+            displayName = "kotlinBase"
+            description = "Convention plugin for the Kotlin JVM projects"
+            implementationClass = "Xyz_waltuh_gradle_ktBasePlugin"
+        }
+        create("xyz.waltuh.gradle.kt-lib") {
+            id = "xyz.waltuh.gradle.kt-lib"
+            displayName = "kotlinLibrary"
+            description = "Convention plugin for the Kotlin JVM libraries"
+            implementationClass = "Xyz_waltuh_gradle_ktLibPlugin"
+        }
+        create("xyz.waltuh.gradle.kt-app") {
+            id = "xyz.waltuh.gradle.kt-app"
+            displayName = "kotlinApplication"
+            description = "Convention plugin for the Kotlin JVM applications"
+            implementationClass = "Xyz_waltuh_gradle_ktAppPlugin"
+        }
+        create("xyz.waltuh.gradle.kt-app-shaded") {
+            id = "xyz.waltuh.gradle.kt-app-shaded"
+            displayName = "kotlinApplicationShaded"
+            description = "Convention plugin for the Kotlin JVM shaded applications"
+            implementationClass = "Xyz_waltuh_gradle_ktAppShadedPlugin"
+        }
+    }
+
     plugins.all {
-        displayName = name
-        description = "Convention plugin for the Kotlin JVM projects"
         tags.set(setOf("kotlin", "jvm", "convention"))
     }
 }
