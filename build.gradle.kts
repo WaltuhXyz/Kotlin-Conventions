@@ -47,7 +47,7 @@ dependencies {
     }
 
     // KtLint
-    implementation("org.jlleitschuh.gradle:ktlint:+") {
+    implementation("org.jlleitschuh.gradle:ktlint-gradle:+") {
         because("Provides 'KtLint' gradle plugin")
     }
 }
