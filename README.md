@@ -32,7 +32,27 @@ Kotlin Conventions comes with a plenty of the basic features that You'll probabl
 
 ## Quickstart
 
-TODO
+All plugins are available on the Gradle Plugins Portal, so You do not need any additional steps other than
+applying the plugin to the project.
+
+```kts
+plugins {
+  id("xyz.waltuh.gradle.kt-<subproject name>") version "<version>"
+}
+```
+
+You can also use "+" as the version. Gradle will resolve this notation to the latest version
+of the plugin available at the moment.
+
+Example of adding the kt-app plugin.
+
+```kts
+plugins {
+  id("xyz.waltuh.gradle.kt-app") version "+"
+}
+```
+
+There are more examples on the plugin portal site, feel free to [CHECK IT OUT](https://plugins.gradle.org/u/WaltuhXyz).
 
 ## Contributing
 
